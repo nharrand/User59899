@@ -16,7 +16,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-h, .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-h {
-  background-image: url('./img/p1-close-up.png');
+  background-image: url('./img/hbg2.png');
   min-height: 400px;
 }
 
@@ -68,9 +68,9 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#p1" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> P1</a>
-    <a href="#p2" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> P2</a>
-    <a href="#p3" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> P3</a>
+    <a href="#p1" class="w3-bar-item w3-button w3-hide-small"> P1</a>
+    <a href="#p2" class="w3-bar-item w3-button w3-hide-small"> P2</a>
+    <a href="#p3" class="w3-bar-item w3-button w3-hide-small"> P3</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -82,9 +82,9 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-h w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">User 59899</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">USER 59899</span>
   </div>
 </div>
 
@@ -108,19 +108,24 @@ body, html {
   
   	<p>The hand-printed calendar “uf.entryMap” represents User 59899’s temperature oscillations. Each block corresponds to a daily temperature measurement, represented with a set of 4 different stamps and 3 different colors. Bigger shapes and warmer colors represent higher values.</p>
   
+    <div class="w3-col">
+      <img src="./img/digital/piece_0.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
   
   
+
     <div class="w3-col m4">
-      <img src="./img/photo/p1-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="./img/photo/p1-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    
+    <div class="w3-col m4">
+      <img src="./img/photo/p1-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
     <div class="w3-col m4">
-      <img src="./img/photo/p1-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="./img/photo/p1-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
-    <div class="w3-col m4">
-      <img src="./img/digital/piece_0.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
   </div>
 </div>
 
@@ -136,34 +141,27 @@ body, html {
   
   <div class="w3-row-padding w3-center">
   
+    <div class="w3-col">
+      <img src="./img/digital/piece_1.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  
   	<p>The machine-knitted piece “uf.predictionMap” represents fertility and predicted ovulation data, which a menstruation app has computed from User 59899’s inputed data.</p>
   
   
   
   
     <div class="w3-col m4">
-      <img src="./img/photo/p2-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="./img/photo/p2-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
     <div class="w3-col m4">
-      <img src="./img/photo/p2-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="./img/photo/p2-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
     <div class="w3-col m4">
-      <img src="./img/photo/p2-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="./img/photo/p2-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
-    <div class="w3-col m4">
-      <img src="./img/photo/p2-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-
-    <div class="w3-col m4">
-      <img src="./img/photo/p2-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-
-    <div class="w3-col m4">
-      <img src="./img/digital/piece_1.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
   </div>
 </div>
 
@@ -177,33 +175,26 @@ body, html {
 
 <div class="w3-content w3-container w3-padding-64" id="p3-c">
   <div class="w3-row-padding w3-center">
+
+    <div class="w3-col">
+      <img src="./img/digital/piece_2.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
   
   <p>The final machine-embroidered artwork “sessions.city, sessions.time” represents data which an app can pervasively collect on a user: the time of usage and location of User 59899. Each symbol represents a different city, and the red circles indicate the time at which the app was first opened.</p>
   
   
     <div class="w3-col m4">
-      <img src="./img/photo/p3-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="./img/photo/p3-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
     <div class="w3-col m4">
-      <img src="./img/photo/p3-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="./img/photo/p3-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
     <div class="w3-col m4">
-      <img src="./img/photo/p3-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="./img/photo/p3-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
-    <div class="w3-col m4">
-      <img src="./img/photo/p3-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-
-    <div class="w3-col m4">
-      <img src="./img/photo/p3-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-
-    <div class="w3-col m4">
-      <img src="./img/digital/piece_2.svg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
   </div>
 </div>
 
